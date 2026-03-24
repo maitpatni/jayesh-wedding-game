@@ -194,7 +194,7 @@ export default function HeroBanner() {
       {/* ── Background video ── */}
       <video autoPlay loop muted playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40">
-        <source src="/jayesh-wedding-game/videos/hero-banner.mp4" type="video/mp4" />
+        <source src="/videos/hero-banner.mp4" type="video/mp4" />
       </video>
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, rgba(26,0,5,0.5) 0%, rgba(13,0,3,0.85) 100%)" }} />

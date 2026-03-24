@@ -202,7 +202,7 @@ function CharacterFigure({ type, side }: { type: "bride" | "groom"; side: "left"
       transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}>
       <div className="relative w-28 sm:w-36">
         <img
-          src={isBride ? "/jayesh-wedding-game/images/bride-illustration.png" : "/jayesh-wedding-game/images/groom-illustration.png"}
+          src={isBride ? "/images/bride-illustration.png" : "/images/groom-illustration.png"}
           alt={isBride ? "Bride in traditional Indian wedding attire" : "Groom in traditional Indian sherwani"}
           className="w-full h-auto object-contain rounded-2xl shadow-2xl"
           style={{ filter: "drop-shadow(0 0 20px rgba(212,160,23,0.2))" }}
