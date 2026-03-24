@@ -191,21 +191,14 @@ export default function HeroBanner() {
       {/* ── Center ambient glow ── */}
       <div className="absolute w-[500px] h-[500px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(212,160,23,0.05) 0%, transparent 65%)", filter: "blur(50px)" }} />
 
-      {/*
-        ╔═══════════════════════════════════════════╗
-        ║  VIDEO PLACEHOLDER                         ║
-        ║  To add a looping background video,       ║
-        ║  uncomment below and remove ParallaxBg    ║
-        ╚═══════════════════════════════════════════╝
-      */}
-      {/* <video
-        autoPlay loop muted playsInline
+      {/* ── Background video ── */}
+      <video autoPlay loop muted playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40"
-        poster="/images/hero-poster.jpg"
-      >
-        <source src="/videos/hero-bg.webm" type="video/webm" />
-        <source src="/videos/hero-bg.mp4" type="video/mp4" />
-      </video> */}
+        poster="/images/varmala-bg.jpg">
+        <source src="/videos/hero-banner.mp4" type="video/mp4" />
+      </video>
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, rgba(26,0,5,0.5) 0%, rgba(13,0,3,0.85) 100%)" }} />
 
       {/* ── Content ── */}
       <motion.div className="relative z-20 text-center px-6 max-w-4xl mx-auto" style={{ y: textY, opacity: textOpacity }}>
