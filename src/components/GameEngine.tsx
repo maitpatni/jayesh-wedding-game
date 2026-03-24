@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "framer-motion";
 import InvitationSeal from "./InvitationSeal";
-import HeroLevel from "./levels/HeroLevel";
+import HeroBanner from "./levels/HeroBanner";
+import VarmalaScene from "./levels/VarmalaScene";
 import LoveStoryLevel from "./levels/LoveStoryLevel";
 import EngagementLevel from "./levels/EngagementLevel";
 import EventsLevel from "./levels/EventsLevel";
@@ -12,7 +13,8 @@ import RSVPLevel from "./levels/RSVPLevel";
 
 const LEVELS = [
   { id: "hero", name: "The Beginning", icon: "🏛️", color: "#d4a017" },
-  { id: "love-story", name: "Our Love Story", icon: "💕", color: "#fb7185" },
+  { id: "varmala", name: "Varmala", icon: "🌸", color: "#fb7185" },
+  { id: "love-story", name: "Our Love Story", icon: "💕", color: "#f43f5e" },
   { id: "engagement", name: "The Proposal", icon: "💍", color: "#fde047" },
   { id: "events", name: "Celebrations", icon: "🎉", color: "#f97316" },
   { id: "gallery", name: "Memories", icon: "📸", color: "#a78bfa" },
@@ -273,7 +275,11 @@ export default function GameEngine() {
 
         {/* Levels - no snap, organic flow */}
         <section className="relative">
-          <HeroLevel started={sealOpened} onStart={() => {}} />
+          <HeroBanner />
+        </section>
+
+        <section className="relative">
+          <VarmalaScene />
         </section>
 
         <section className="relative">
