@@ -271,28 +271,28 @@ export default function GameEngine() {
           </motion.div>
         )}
 
-        {/* Levels */}
-        <section className="relative snap-start">
+        {/* Levels - no snap, organic flow */}
+        <section className="relative">
           <HeroLevel started={sealOpened} onStart={() => {}} />
         </section>
 
-        <section className="relative snap-start">
+        <section className="relative">
           <LoveStoryLevel />
         </section>
 
-        <section className="relative snap-start">
+        <section className="relative">
           <EngagementLevel />
         </section>
 
-        <section className="relative snap-start">
+        <section className="relative">
           <EventsLevel />
         </section>
 
-        <section className="relative snap-start">
+        <section className="relative">
           <GalleryLevel />
         </section>
 
-        <section className="relative snap-start">
+        <section className="relative">
           <RSVPLevel />
         </section>
       </motion.div>
